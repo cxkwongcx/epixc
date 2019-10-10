@@ -1,0 +1,241 @@
+
+/**
+ * Unit 2 Project
+ * 
+ * In this project you have the opportunity to demonstrate your knowledge of for loops
+ * and nested for loops. Using the already created file named `SpaceNeedle.java` write a 
+ * program that outputs an ASCII art version of the Space Needle. The goal of this 
+ * project is to use ONLY what we have learned in Unit 2 (and prior) to create the Space 
+ * Needle. Your code must be broken up into methods as appropriate and have comments 
+ * describing what each method does.  
+ * 
+ * For those of you who have dabbled in coding before, try to contain your code to 
+ * just what we have discussed in this (and previous) unit. 
+ */
+
+package spaceNeedle;
+
+public class SpaceNeedle {
+	/**
+	 * DO NOT MODIFY THE NAME/TYPE OF THIS CLASS CONSTANT.
+	 * 
+	 * You may modify the value to test your output on different sizes.
+	 */
+	private static int SIZE = 3;
+	
+	
+	//this is inside the class scope which means it's usable in any of the methods
+	
+	/*public static void colon1(){
+	*	System.out.print
+	
+	}*/
+	public static void main(String[] args) {
+		
+
+		for (int a = 0; a<SIZE; a++) {
+				for (int aa = 1; aa<=SIZE*3; aa++) {
+					System.out.print(" ");
+				}
+				System.out.println("||");//makes the top part
+			
+		}
+		for (int i = 0; i<SIZE; i++) {
+			for (int j =i; j < SIZE-1; j++) {
+				System.out.print("   ");
+			}
+			System.out.print("__/");
+			for (int j = 1; j<=i*3; j++) {
+				System.out.print(":");
+				
+			}
+			System.out.print("||");
+			for (int j =1; j<=i*3; j++) {
+				System.out.print(":");
+			}
+			System.out.println("\\__");
+			}                                      //end of top half
+		System.out.print("|");
+			for (int i =1; i<=SIZE*6;i++) {
+				System.out.print("\"");
+			}
+		System.out.println("|");                   //end of top mid line
+		
+		for (int i = 0; i<SIZE; i++) {
+			for (int j =i+1; j<=i*3;j++) {
+				System.out.print(" ");
+			}
+			System.out.print("\\_");
+			
+			
+			for (int j =0; j<((SIZE*3)-1)-(i*2); j++) {
+				
+				
+				
+				System.out.print("/\\");
+			}
+			System.out.println("_/");
+		}                                        //end of bottom lol
+
+				
+		for (int a = 0; a<SIZE; a++) {
+			for (int aa = 1; aa<=SIZE*3; aa++) {
+				System.out.print(" ");
+			}
+			System.out.println("||");
+		}										//end of bottom extention from top
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		for (int a = 0; a<SIZE*SIZE; a++) {
+			for (int aa = 1; aa<=SIZE*2+1; aa++) {
+				System.out.print(" ");
+			}
+			
+			System.out.print("|");
+			for (int j = 1; j<=SIZE-2; j++) {
+				System.out.print("%");
+			}
+			System.out.print("||");
+			for (int j = 1; j<=SIZE-2; j++) {
+				System.out.print("%");
+			}
+				System.out.println("|");
+		}										//end of elevator
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	
+	for (int i = 0; i<SIZE; i++) {
+		for (int j =i; j < SIZE-1; j++) {
+			System.out.print("   ");
+		}
+		System.out.print("__/");
+		for (int j = 1; j<=i*3; j++) {
+			System.out.print(":");
+			
+		}
+		System.out.print("||");
+		for (int j =1; j<=i*3; j++) {
+			System.out.print(":");
+		}
+		System.out.println("\\__");
+		}                                      //end of top half
+	System.out.print("|");
+		for (int i =1; i<=SIZE*6;i++) {
+			System.out.print("\"");
+		}
+	System.out.println("|");                   //end of top mid line
+		
+		
+		
+		
+		
+			//tip is done
+				
+/*			 for (int d = 1; d<SIZE; d++) {
+			for (int f = 1; f<=3; f++) {
+					System.out.print(" ");
+			}//spaces for the first top row
+		}
+				System.out.println("__/||\\__");
+				//first line is done
+				
+				
+		for (int e = SIZE; e<SIZE+1; e++) {//for spaces on send level from top
+			for (int g = 2; g<SIZE; g++){
+				System.out.print("   ");
+			}
+		}
+			System.out.println("__/:::||:::\\__");
+			//second line is done
+			
+		for (int rowThree = 3; rowThree<=SIZE; rowThree++) {
+			
+			int mathForLineThree = 12-(SIZE*3);
+			for (int lineThreeSpaces = mathForLineThree; lineThreeSpaces< 3;lineThreeSpaces++) {
+				System.out.print(" ");
+			}
+			System.out.println("__/::::::||::::::\\__");
+			
+		}
+		//needs fixing above
+		System.out.print("|");
+		for (int midline = 1; midline<=SIZE; midline++) {
+			System.out.print("\"\"\"\"\"\"");
+		}
+		System.out.println("|");
+		System.out.print("\\_/");
+			
+			for (int veeOne = 1; veeOne<=(SIZE*3)-2; veeOne++) {
+				System.out.print("\\/");
+			}
+		System.out.println("\\_/");
+			
+//			for (int veeTwo = 1; veeTwo<=)
+		//add in the rest of the slashes and stuff here
+				
+				for (int bottomTip = 1; bottomTip <=SIZE; bottomTip++) {
+					for (int bottomTipSpaces = 1; bottomTipSpaces<=(3*SIZE); bottomTipSpaces++) {
+				
+				
+			
+					}
+				}
+			
+			
+			
+			
+			
+		
+		
+		
+		
+		
+		
+		
+		
+		*/
+		// Your Code Here
+	}
+	
+	// Your Methods Here
+}
